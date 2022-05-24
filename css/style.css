@@ -66,7 +66,7 @@ li a:hover {
 }
 
 li:last-child {
-    border-right: hsl(180, 55%, 56%);
+    border-right: hsl(180, 87%, 38%);
 }
 
 /*ESTILOS DEL MAIN */    
@@ -84,6 +84,7 @@ main{
     margin: 0px;
     background-size: cover;
     background-position: left;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -122,6 +123,7 @@ body{
     font-style: italic;
     justify-content: center;
     margin: 50px;
+    background-image: linear-gradient(blue, aqua);
 }
 
 .conoc{
@@ -137,6 +139,9 @@ body{
 .portada{
     border-style: double;
     border-color: #2d07ac;
+    display: flex;
+    background-size: cover;
+    background-position: top;
 }
 
 .NuestrosCoordinadores{
@@ -150,6 +155,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: 50px;
+    background-image: linear-gradient(blue, aqua);
 }
 
 p{
@@ -292,7 +298,7 @@ footer i{
 
 .item4{
     grid-area: img4;
-    background-color: #ea1b1b;
+    background-color: #250a74;
     background-image: url(../multimedia/chocolatada2.jpg);
     background-size: cover;
     background-position: top;
@@ -338,19 +344,19 @@ footer i{
 
 @media only screen and (min-width:480px){
     .nosotros{
-        background-color: rgb(25, 184, 28);
+        background-color: rgba(27, 207, 220, 0.683);
     }   
 }
 
 @media only screen and (min-width:600px){
     .nosotros{
-        background-color: rgb(201, 10, 201);
+        background-color: rgb(32, 65, 229);
     }   
 }
 
 @media only screen and (min-width:768px){
     .nosotros{
-        background-color: rgb(194, 9, 9);
+        background-color: rgb(40, 7, 112);
     }   
 }
 
