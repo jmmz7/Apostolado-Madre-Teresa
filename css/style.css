@@ -170,7 +170,7 @@ body {
   background-size: cover;
   background-position: top;
 }
-
+/* 
 .NuestrosCoordinadores {
   width: 600px;
   height: 350px;
@@ -178,11 +178,15 @@ body {
   border-style: double;
   border-color: blue;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   margin: 50px;
   background-image: linear-gradient(blue, aqua);
+} */
+
+.table{
+  background-image: linear-gradient(rgb(121, 121, 240), aqua);
 }
 
 p {
@@ -447,3 +451,43 @@ input {
   border-color: #149ead;
   padding: 50px;
 }
+
+
+/* <table class="table-responsive" border="3" cellpadding="2" cellspacing="2">
+<tr>
+    <!-- <tr>inicio de fila -->
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Ocupacion</th>
+    <th>Contacto</th>
+    <th>Mensaje</th>
+</tr>
+<!-- </tr>cierre de fila -->
+<tr>
+    <!-- <tr>inicio de otra fila -->
+    <td>Nicolas</td>
+    <td>Bottaro</td>
+    <td>Licenciado en Biotecnología</td>
+    <td>343-12345678</td>
+    <td><i>Vengan y hagan la prueba</i></td>
+</tr>
+<!-- </tr>cierre de otra fila -->
+<tr>
+    <!-- <tr>inicio de otra fila -->
+    <td>Nieves</td>
+    <td>Gomez</td>
+    <td>Licenciada en Psicopedagogia</td>
+    <td>343-12367891</td>
+    <td><i>la luz de tu amor ilumine al mundo</i></td>
+</tr>
+<!-- </tr>cierre de otra fila -->
+<tr>
+    <!-- <tr>inicio de otra fila -->
+    <td>Kevin</td>
+    <td>Dietrich</td>
+    <td>Profesor de Inglés</td>
+    <td>343-12367896</td>
+    <td><i>dar mas amor que recibir</i></td>
+</tr>
+<!-- </tr>cierre de otra fila -->
+</table> */
