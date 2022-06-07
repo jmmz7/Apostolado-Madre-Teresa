@@ -1,0 +1,29 @@
+h2{
+    color: aqua;
+    background-color: rgb(65, 185, 185);
+    text-align: center;
+}
+
+body{
+    background-color: rgb(135, 130, 237);
+}
+
+section{
+    background-color: rgba(127, 227, 227, 0.578);
+    height: 300px;
+    width: 100px;
+
+    article{
+        height: 200px;
+        width: 100px;
+        background-color: rgb(12, 133, 106);
+
+        h2{
+            color: rgba(154, 234, 223, 0.79);
+            text-align: center;
+            p{
+                color: rgb(32, 9, 73);
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "apostolado_martinezzaffuan",
+  "version": "1.0.0",
+  "description": "sitio web apostolado madre teresa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmmz7/Apostolado-Madre-Teresa.git"
+  },
+  "author": "Julian Martinez Zaffuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmmz7/Apostolado-Madre-Teresa/issues"
+  },
+  "homepage": "https://github.com/jmmz7/Apostolado-Madre-Teresa#readme"
+}
