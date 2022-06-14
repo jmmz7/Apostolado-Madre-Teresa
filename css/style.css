@@ -1,110 +1,32 @@
 /* index */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
-
 /* selector universal */
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 /* INDEX */
-
 /* Estilos del Header */
-
-/* header{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
-    border-style: double;
-    border-color: hsl(245, 73%, 41%);
-    text-align: center;
-    background:url(../multimedia/fondoimagen.jpg) no-repeat;
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
-
-/* .conteiner{
-    display: grid;
-}
-
-ul{
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-image: url(../multimedia/madre-teresa.png);
-    margin: 0;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-between;
-    align-items: center;
-    border-style: double;
-    border-color: #2d07ac;
-    flex-wrap: wrap;
-}
-
-li{
-    float: left;
-}
-
-li a{
-    color: rgb(20, 6, 55);
-    text-align: center;  
-    text-decoration: none;    
-} */
-
-/*cambiar de color al pasar el mouse */
-
-/* li a:hover {
-    background-color: rgb(225, 241, 244);
-}
-
-li:last-child {
-    border-right: hsl(180, 87%, 38%);
-} */
-
 /*ESTILOS DEL MAIN */
-
-/* main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    content: normal;
-    border: 10px;
-    border-style: ridge;
-    border-color: #149ead;
-    padding: 20px;
-    margin: 0px;
-    background-size: cover;
-    background-position: left;
-    flex-wrap: wrap;
-} */
-
-main {
-  height: 400px;
-}
-
 article {
-  height: 400px;
-  width: 100%;
   background-color: rgba(184, 240, 237, 0.826);
   border: 2px solid #333;
 }
-
-article img{
+article img {
   display: flex;
-  background-size: contain;
+  background-size: conver;
+  height: 400px;
+  width: 100%;
 }
 
 .cajas {
-  background-color: rgb(184, 240, 237, 0.826);
+  background-color: rgba(184, 240, 237, 0.826);
   border: 2px solid #333;
   height: 400px;
   width: 100%;
@@ -121,7 +43,7 @@ h2 {
   text-align: center;
 }
 
-.rounded{
+.rounded {
   background-position: center;
 }
 
@@ -134,24 +56,12 @@ h3 {
 }
 
 body {
+  margin: 0;
   background-color: white;
-}
-
-/* .QuienesSomos {
-  width: 600px;
-  height: 350px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
-  border-style: double;
-  border-color: blue;
-  text-align: justify;
-  font-style: italic;
-  justify-content: center;
-  margin: 50px;
-  background-image: linear-gradient(blue, aqua);
-} */
+  min-height: 100vh;
+}
 
 .conoc {
   height: 100px;
@@ -170,22 +80,8 @@ body {
   background-size: cover;
   background-position: top;
 }
-/* 
-.NuestrosCoordinadores {
-  width: 600px;
-  height: 350px;
-  padding: 10px;
-  border-style: double;
-  border-color: blue;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px;
-  background-image: linear-gradient(blue, aqua);
-} */
 
-.table{
+.table {
   background-image: linear-gradient(rgb(121, 121, 240), aqua);
 }
 
@@ -195,8 +91,7 @@ p {
   font-style: bold;
 }
 
-/* TABLA */
-
+/* TABLA DE INDEX */
 table {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -206,7 +101,6 @@ table {
 }
 
 /* Ubicacion */
-
 .ubicacion {
   text-align: center;
   height: 400px;
@@ -222,19 +116,15 @@ table {
 
 /* Inicio de footer */
 footer {
-  min-height: 80px;
-  width: 100%;
-  background-color: rgba(127, 197, 255, 0.336);
+  background-color: rgba(63, 160, 240, 0.336);
+  padding: 1em 0;
   text-align: center;
-  font-size: 20px;
-  padding: 20px;
-  background-size: 50%;
+  margin-top: auto;
+  width: 100%;
 }
-
 footer p {
   margin-bottom: 20px;
 }
-
 footer i {
   font-size: 50px;
   color: blue;
@@ -258,17 +148,15 @@ footer i {
   color: rgb(27, 21, 220);
   box-shadow: 0 0 10px rgb(6, 173, 157);
 }
+
 /* Fin de Footer */
-
 /* NOSOTROS */
-
 .oracion {
   border-style: ridge;
   border-color: rgb(0, 0, 0);
   text-align: justify;
   padding: 10px;
   width: 100%;
-  height: 150px;
   border: 5px solid rgba(51, 148, 153, 0.678);
   background-color: rgb(97, 220, 210);
   display: flex;
@@ -283,10 +171,7 @@ footer i {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 200px 200px;
-  grid-template-areas:
-    "img1 img2 img3 img3"
-    " img1 img4 img5 img6"
-    " img7 img4 img8 img8";
+  grid-template-areas: "img1 img2 img3 img3" " img1 img4 img5 img6" " img7 img4 img8 img8";
   grid-gap: 10px;
 }
 
@@ -372,27 +257,22 @@ footer i {
     background-color: rgb(80, 238, 196);
   }
 }
-
 @media only screen and (min-width: 480px) {
   .nosotros {
     background-color: rgba(27, 207, 220, 0.683);
   }
 }
-
 @media only screen and (min-width: 600px) {
   .nosotros {
     background-color: rgb(32, 65, 229);
   }
 }
-
 @media only screen and (min-width: 768px) {
   .nosotros {
     background-color: rgb(40, 7, 112);
   }
 }
-
 /* CONTACTO */
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -432,16 +312,7 @@ input {
 }
 
 /* NOTICIAS */
-
-/* .noticias{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-} */
-
 /* COLABORA CON NOSOTROS */
-
 .insumos {
   text-align: center;
   width: 100%;
@@ -452,42 +323,9 @@ input {
   padding: 50px;
 }
 
+.img5 {
+  width: 100%;
+  height: 350px;
+}
 
-/* <table class="table-responsive" border="3" cellpadding="2" cellspacing="2">
-<tr>
-    <!-- <tr>inicio de fila -->
-    <th>Nombre</th>
-    <th>Apellido</th>
-    <th>Ocupacion</th>
-    <th>Contacto</th>
-    <th>Mensaje</th>
-</tr>
-<!-- </tr>cierre de fila -->
-<tr>
-    <!-- <tr>inicio de otra fila -->
-    <td>Nicolas</td>
-    <td>Bottaro</td>
-    <td>Licenciado en Biotecnología</td>
-    <td>343-12345678</td>
-    <td><i>Vengan y hagan la prueba</i></td>
-</tr>
-<!-- </tr>cierre de otra fila -->
-<tr>
-    <!-- <tr>inicio de otra fila -->
-    <td>Nieves</td>
-    <td>Gomez</td>
-    <td>Licenciada en Psicopedagogia</td>
-    <td>343-12367891</td>
-    <td><i>la luz de tu amor ilumine al mundo</i></td>
-</tr>
-<!-- </tr>cierre de otra fila -->
-<tr>
-    <!-- <tr>inicio de otra fila -->
-    <td>Kevin</td>
-    <td>Dietrich</td>
-    <td>Profesor de Inglés</td>
-    <td>343-12367896</td>
-    <td><i>dar mas amor que recibir</i></td>
-</tr>
-<!-- </tr>cierre de otra fila -->
-</table> */
+/*# sourceMappingURL=style.css.map */
