@@ -13,8 +13,7 @@
   <title>Contacto</title>
   <link rel="shortcut icon" href="../multimedia/logofavicon.jpg">
 </head>
-
-<body>
+<body class="form">
   <!-- Fila de logo + nav -->
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
@@ -45,15 +44,12 @@
       </div>
     </nav>
   </header>
+<!-- cierre de fila logo + nav -->
   <main>
-    <!-- cierre de fila logo + nav -->
-    <!-- fila de informacion de mi sitio -->
+  <!-- fila de informacion de mi sitio -->
     <section class="formulario">
       <h1>CONTACTO</h1>
-      <img src="../multimedia/contacto.jpg" class="mx-auto d-block" width="180" height="180">
-      <!-- <img src="../multimedia/contacto.jpg" alt="img contacto" width="180" height="180" /> -->
       <!-- formulario de contacto -->
-      <article>
         <h2>¿Queres formar parte de nuestro equipo?</h2>
         <form action="enviar.php" method="post" enctype="text/plain">
           <label for="name1">Nombre</label>
@@ -69,12 +65,11 @@
           <input type="submit" value="Enviar Formulario" />
           <input type="reset" value="Limpiar Formulario" />
         </form>
-      </article>
-    </section>
-    <!-- Video Convocatoria -->
-    <h3 class="convocatoria">Convocatoria!</h3>
-    <iframe src="../multimedia/video apostolado.mp4"></iframe>
-    </section>
+<!-- Video Convocatoria -->
+        <div class="convocatoria">
+        <iframe class="video" src="../multimedia/video apostolado.mp4"></iframe>
+        </div>
+      </section>
     <!-- cierre de form contacto -->
   </main>
   <!-- inicio de footer -->
