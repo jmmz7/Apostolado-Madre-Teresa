@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* index */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
 /* selector universal */
@@ -62,16 +63,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.conoc {
-  height: 100px;
-  width: 100%;
-  color: hwb(184 5% 37%);
-  font-size: 18px;
-  text-align: justify;
-  font-weight: bold;
-  padding: 10px;
 }
 
 .portada {
@@ -152,19 +143,7 @@ footer i {
 
 /* Fin de Footer */
 /* NOSOTROS */
-.oracion {
-  border-style: ridge;
-  border-color: rgb(0, 0, 0);
-  text-align: justify;
-  padding: 10px;
-  width: 100%;
-  border: 5px solid rgba(51, 148, 153, 0.678);
-  background-color: rgb(97, 220, 210);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nosotros {
+section .nosotros {
   width: 100%;
   min-height: 400px;
   background-color: #1939f1;
@@ -175,77 +154,67 @@ footer i {
   grid-template-areas: "img1 img2 img3 img3" " img1 img4 img5 img6" " img7 img4 img8 img8";
   grid-gap: 10px;
 }
-
-.item {
+section .nosotros .item {
   border-style: ridge;
   border-color: #2b63b8;
   border-radius: 10px;
   filter: grayscale(100%);
 }
-
-.item:hover {
+section .nosotros .item:hover {
   transform: scale(1.1);
   transition: all 0.7s;
   filter: grayscale(0%);
 }
-
-.item1 {
+section .nosotros .item1 {
   grid-area: img1;
   background-color: #2d07ac;
   background-image: url(../multimedia/barrios.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item2 {
+section .nosotros .item2 {
   grid-area: img2;
   background-color: #dada19;
   background-image: url(../multimedia/barrios2.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item3 {
+section .nosotros .item3 {
   grid-area: img3;
   background-color: #cf5310;
   background-image: url(../multimedia/chocolatada.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item4 {
+section .nosotros .item4 {
   grid-area: img4;
   background-color: #250a74;
   background-image: url(../multimedia/chocolatada2.jpg);
   background-size: cover;
   background-position: top;
 }
-
-.item5 {
+section .nosotros .item5 {
   grid-area: img5;
   background-color: #1ed6c7;
   background-image: url(../multimedia/chu.jpg);
   background-size: cover;
   background-position: top;
 }
-
-.item6 {
+section .nosotros .item6 {
   grid-area: img6;
   background-color: #8a0c8e;
   background-image: url(../multimedia/chu2.jpg);
   background-size: cover;
   background-position: bottom;
 }
-
-.item7 {
+section .nosotros .item7 {
   grid-area: img7;
   background-color: #e68721;
   background-image: url(../multimedia/juegos2.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.item8 {
+section .nosotros .item8 {
   grid-area: img8;
   background-color: #020007;
   background-image: url(../multimedia/fondoimagen.jpg);
@@ -273,6 +242,18 @@ footer i {
     background-color: rgb(40, 7, 112);
   }
 }
+.oracion {
+  border-style: ridge;
+  border-color: rgb(0, 0, 0);
+  text-align: justify;
+  padding: 10px;
+  width: 100%;
+  border: 5px solid rgba(51, 148, 153, 0.678);
+  background-color: rgb(97, 220, 210);
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* FORMULARIO PAGINA DE CONTACTO */
 .form {
   background-image: url(../multimedia/barrios2.jpg);
@@ -285,8 +266,7 @@ footer i {
   border-style: ridge;
   border-color: #084248;
 }
-
-form {
+.formulario form {
   width: 450px;
   margin: auto;
   background: rgba(115, 227, 237, 0.8);
@@ -300,13 +280,11 @@ form {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-
-label {
+.formulario label {
   font-family: "Open Sans", sans-serif;
   float: left;
 }
-
-input {
+.formulario input {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -327,9 +305,33 @@ input {
   margin: 25px;
   text-align: center;
   text-decoration: solid;
+  width: 560px;
+  margin: auto;
+  padding: 20px;
+}
+.convocatoria .contenedor {
+  height: 0px;
+  width: 100%;
+  max-width: 560px;
+  /* Así establecemos el ancho máximo (si lo queremos) */
+  padding-top: 56.25%;
+  /* Relación: 16/9 = 56.25% */
+  position: relative;
+}
+.convocatoria .contenedor iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
 }
 
-/* NOTICIAS */
+/* NOTICIAS -Mejoras de imagen de carrousel- */
+main div a img {
+  min-height: 100px;
+  width: 100%;
+}
+
 /* COLABORA CON NOSOTROS */
 .insumos {
   text-align: center;
