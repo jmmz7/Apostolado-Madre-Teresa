@@ -141,19 +141,20 @@ footer {
 }
 
 .subir {
-    height: 55px;
-    width: 55px;
-    background-color: rgb(62, 215, 241);
+    height: 1.25em;
+    width: 1.25em;
+    background-color: rgb(213, 232, 235);
+    background-image: url(../multimedia/madre-teresa.png);
     position: fixed;
     bottom: 20px;
-    right: 25px;
-    text-align: center;
-    line-height: 20px;
+    right: 30px;
+    list-style: none;
+    // line-height: 20px;
     font-size: 25px;
-    border-radius: 100%;
+    border-block-end-style: 100%;
     border: 5px solid #fff;
-    color: rgb(27, 21, 220);
-    box-shadow: 0 0 10px rgb(6, 173, 157);
+    color: rgb(30, 30, 198);
+    box-shadow: 0 0 15px rgb(6, 173, 157);
 }
 
 /* Fin de Footer */
