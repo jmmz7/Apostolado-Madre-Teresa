@@ -13,7 +13,12 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* INDEX */
+
+// HEAD
+
+
 
 /* Estilos del Header */
 
@@ -363,17 +368,11 @@ section {
     }
 }
 
-/* NOTICIAS -Mejoras de imagen de carrousel- */
+/* NOTICIAS */
 
-main {
-    div {
-        a {
-            img {
-                min-height: 100px;
-                width: 100%;
-            }
-        }
-    }
+.col-sm-4{
+    border-style: ridge;
+    display: grid;
 }
 
 
@@ -387,9 +386,4 @@ main {
     border-style: ridge;
     border-color: #149ead;
     padding: 50px;
-}
-
-.img5 {
-    width: 100%;
-    height: 350px;
 }

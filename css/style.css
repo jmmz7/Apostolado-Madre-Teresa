@@ -326,10 +326,10 @@ section .nosotros .item8 {
   left: 0px;
 }
 
-/* NOTICIAS -Mejoras de imagen de carrousel- */
-main div a img {
-  min-height: 100px;
-  width: 100%;
+/* NOTICIAS */
+.col-sm-4 {
+  border-style: ridge;
+  display: grid;
 }
 
 /* COLABORA CON NOSOTROS */
@@ -341,11 +341,6 @@ main div a img {
   border-style: ridge;
   border-color: #149ead;
   padding: 50px;
-}
-
-.img5 {
-  width: 100%;
-  height: 350px;
 }
 
 /*# sourceMappingURL=style.css.map */
