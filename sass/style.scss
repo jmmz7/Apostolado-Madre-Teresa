@@ -16,37 +16,17 @@ html {
 
 /* INDEX */
 
-// HEAD
-
-
-
-/* Estilos del Header */
-
 
 /*ESTILOS DEL MAIN */
 
-article {
-    background-color: rgba(184, 240, 237, 0.826);
-    border: 2px solid #333;
-
-    img {
-        display: flex;
-        background-size: conver;
-        height: 400px;
-        width: 100%;
-    }
-}
-
-.cajas {
-    background-color: rgb(184, 240, 237, 0.826);
-    border: 2px solid #333;
-    height: 400px;
-    width: 100%;
+img {
+    max-width: 100%;
+    // width: 25em;
 }
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    color: black;
+    color: blue;
     text-align: center;
 }
 
@@ -56,62 +36,37 @@ h2 {
     text-align: center;
 }
 
-.rounded {
-    background-position: center;
-}
-
 h3 {
     font-family: "Open Sans", sans-serif;
     color: black;
-    background-color: white;
     text-align: center;
-    text-decoration: double;
 }
 
 body {
     margin: 0;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
-.portada {
-    border-style: double;
-    border-color: #2d07ac;
-    display: flex;
-    background-size: cover;
-    background-position: top;
-}
-
-.table {
-    background-image: linear-gradient(rgb(121, 121, 240), aqua);
-}
-
-p {
-    color: hwb(180 0% 99%);
-    font-family: "Open Sans", sans-serif;
-    font-style: bold;
-}
 
 /* TABLA DE INDEX */
+.table {
+    background-image: linear-gradient(rgb(87, 87, 244), aqua);
 
-table {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    text-align: center;
-    line-height: 20px;
-    word-spacing: 5px;
+    table {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+        word-spacing: 5px;
+    }
 }
 
 /* Ubicacion */
 
 .ubicacion {
-    text-align: center;
-    height: 400px;
-    width: 400px;
-    margin: 5px;
-    padding: 5px;
+    height: 15em;
+    width: 20em;
     border-style: double;
     border-color: blue;
     display: flex;
@@ -162,7 +117,7 @@ footer {
 /* NOSOTROS */
 
 section {
-    
+
     h1 {}
 
     .nosotros {
@@ -184,12 +139,14 @@ section {
             border-color: #2b63b8;
             border-radius: 10px;
             filter: grayscale(100%);
+
             &:hover {
                 transform: scale(1.1);
                 transition: all 0.7s;
                 filter: grayscale(0%);
             }
         }
+
         .item1 {
             grid-area: img1;
             background-color: #2d07ac;
@@ -197,6 +154,7 @@ section {
             background-size: cover;
             background-position: center;
         }
+
         .item2 {
             grid-area: img2;
             background-color: #dada19;
@@ -204,6 +162,7 @@ section {
             background-size: cover;
             background-position: center;
         }
+
         .item3 {
             grid-area: img3;
             background-color: #cf5310;
@@ -211,6 +170,7 @@ section {
             background-size: cover;
             background-position: center;
         }
+
         .item4 {
             grid-area: img4;
             background-color: #250a74;
@@ -218,13 +178,15 @@ section {
             background-size: cover;
             background-position: top;
         }
+
         .item5 {
             grid-area: img5;
             background-color: #1ed6c7;
             background-image: url(../multimedia/chu.jpg);
             background-size: cover;
             background-position: top;
-        }            
+        }
+
         .item6 {
             grid-area: img6;
             background-color: #8a0c8e;
@@ -232,6 +194,7 @@ section {
             background-size: cover;
             background-position: bottom;
         }
+
         .item7 {
             grid-area: img7;
             background-color: #e68721;
@@ -239,6 +202,7 @@ section {
             background-size: cover;
             background-position: center;
         }
+
         .item8 {
             grid-area: img8;
             background-color: #020007;
@@ -371,7 +335,7 @@ section {
 
 /* NOTICIAS */
 
-.col-sm-4{
+.col-sm-4 {
     border-style: ridge;
     display: grid;
 }

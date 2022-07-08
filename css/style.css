@@ -13,29 +13,14 @@ html {
 }
 
 /* INDEX */
-/* Estilos del Header */
 /*ESTILOS DEL MAIN */
-article {
-  background-color: rgba(184, 240, 237, 0.826);
-  border: 2px solid #333;
-}
-article img {
-  display: flex;
-  background-size: conver;
-  height: 400px;
-  width: 100%;
-}
-
-.cajas {
-  background-color: rgba(184, 240, 237, 0.826);
-  border: 2px solid #333;
-  height: 400px;
-  width: 100%;
+img {
+  max-width: 100%;
 }
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: blue;
   text-align: center;
 }
 
@@ -45,46 +30,23 @@ h2 {
   text-align: center;
 }
 
-.rounded {
-  background-position: center;
-}
-
 h3 {
   font-family: "Open Sans", sans-serif;
   color: black;
-  background-color: white;
   text-align: center;
-  text-decoration: double;
 }
 
 body {
   margin: 0;
   background-color: white;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
-.portada {
-  border-style: double;
-  border-color: #2d07ac;
-  display: flex;
-  background-size: cover;
-  background-position: top;
-}
-
-.table {
-  background-image: linear-gradient(rgb(121, 121, 240), aqua);
-}
-
-p {
-  color: hwb(180 0% 99%);
-  font-family: "Open Sans", sans-serif;
-  font-style: bold;
-}
-
 /* TABLA DE INDEX */
-table {
+.table {
+  background-image: linear-gradient(rgb(87, 87, 244), aqua);
+}
+.table table {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -94,11 +56,8 @@ table {
 
 /* Ubicacion */
 .ubicacion {
-  text-align: center;
-  height: 400px;
-  width: 400px;
-  margin: 5px;
-  padding: 5px;
+  height: 15em;
+  width: 20em;
   border-style: double;
   border-color: blue;
   display: flex;
