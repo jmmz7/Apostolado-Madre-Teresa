@@ -47,7 +47,6 @@ body {
 .map-responsive {
     overflow:hidden;
     padding-bottom:400px;
-    /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px,  50%*/
     position:relative;
     height:0;
 
@@ -233,16 +232,7 @@ section {
 
 // Oracion del Apostolado
 
-.oracion {
-    margin: auto;
-    width: 100%;
-    height: 20em;
-    text-align: center;
-    border: solid rgba(51, 148, 153, 0.678);
-    background-color: rgb(97, 220, 210);
-    display: flex;
-    justify-content: center;
-}
+
 
 /* FORMULARIO PAGINA DE CONTACTO */
 
