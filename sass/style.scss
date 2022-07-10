@@ -30,13 +30,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-family: "Open Sans", sans-serif;
-    color: black;
-    text-align: center;
-}
-
-h3 {
+h2, h3, h4 {
     font-family: "Open Sans", sans-serif;
     color: black;
     text-align: center;
@@ -48,8 +42,26 @@ body {
     min-height: 100vh;
 }
 
+// Ubicacion
 
-/* TABLA DE INDEX */
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:400px;
+    /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px,  50%*/
+    position:relative;
+    height:0;
+
+    iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position: absolute;
+    }
+}
+
+
+/* TABLA DE INDEX y de Colabora */
 .table {
     background-image: linear-gradient(rgb(87, 87, 244), aqua);
 
@@ -62,17 +74,6 @@ body {
     }
 }
 
-/* Ubicacion */
-
-.ubicacion {
-    height: 15em;
-    width: 20em;
-    border-style: double;
-    border-color: blue;
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover;
-}
 
 /* Inicio de footer */
 footer {
@@ -104,7 +105,6 @@ footer {
     bottom: 20px;
     right: 30px;
     list-style: none;
-    // line-height: 20px;
     font-size: 25px;
     border-block-end-style: 100%;
     border: 5px solid #fff;
@@ -128,10 +128,9 @@ section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px 200px 200px;
-        grid-template-areas:
-            "img1 img2 img3 img3"
-            " img1 img4 img5 img6"
-            " img7 img4 img8 img8";
+        grid-template-areas: "img1 img2 img3 img3"
+        " img1 img4 img5 img6"
+        " img7 img4 img8 img8";
         grid-gap: 10px;
 
         .item {
@@ -220,12 +219,6 @@ section {
     }
 }
 
-@media only screen and (min-width: 480px) {
-    .nosotros {
-        background-color: rgba(27, 207, 220, 0.683);
-    }
-}
-
 @media only screen and (min-width: 600px) {
     .nosotros {
         background-color: rgb(32, 65, 229);
@@ -238,23 +231,23 @@ section {
     }
 }
 
+// Oracion del Apostolado
+
 .oracion {
-    border-style: ridge;
-    border-color: rgb(0, 0, 0);
-    text-align: justify;
-    padding: 10px;
+    margin: auto;
     width: 100%;
-    border: 5px solid rgba(51, 148, 153, 0.678);
+    height: 20em;
+    text-align: center;
+    border: solid rgba(51, 148, 153, 0.678);
     background-color: rgb(97, 220, 210);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* FORMULARIO PAGINA DE CONTACTO */
 
 // Formato body para formulario en la pagina
 .form {
-    background-image: url(../multimedia/barrios2.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0%;
@@ -267,14 +260,14 @@ section {
     border-color: #084248;
 
     form {
-        width: 450px;
+        width: 100%;
         margin: auto;
-        background: rgba(115, 227, 237, 0.8);
+        background: linear-gradient(rgb(87, 87, 244), aqua);
         padding: 10px 20px;
         margin-top: 20px;
         border-radius: 7px;
         font-size: 17px;
-        border: 5px solid #2d07ac;
+        border: solid #2d07ac;
         border-style: double;
         display: flex;
         flex-direction: column;
@@ -342,13 +335,3 @@ section {
 
 
 /* COLABORA CON NOSOTROS */
-
-.insumos {
-    text-align: center;
-    width: 100%;
-    height: 800px;
-    border: 10px;
-    border-style: ridge;
-    border-color: #149ead;
-    padding: 50px;
-}
