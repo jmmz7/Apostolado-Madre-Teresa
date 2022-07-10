@@ -230,9 +230,6 @@ section {
     }
 }
 
-// Oracion del Apostolado
-
-
 
 /* FORMULARIO PAGINA DE CONTACTO */
 
@@ -318,9 +315,25 @@ section {
 
 /* NOTICIAS */
 
-.col-sm-4 {
-    border-style: ridge;
-    display: grid;
+
+/* Estado inicial */
+a:link {
+    color: red;
+}
+
+/* enlace sobre el que ya hemos hecho clic */
+a:visited {
+    color: green;
+}
+
+/* cuando el puntero del mouse esta sobre el */
+a:hover {
+    color: hotpink;
+}
+
+/* Mientras estamos presionando el enlace */
+a:active {
+    color: blue;
 }
 
 
