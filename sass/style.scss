@@ -30,7 +30,9 @@ h1 {
     text-align: center;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-family: "Open Sans", sans-serif;
     color: black;
     text-align: center;
@@ -45,16 +47,16 @@ body {
 // Ubicacion
 
 .map-responsive {
-    overflow:hidden;
-    padding-bottom:400px;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 400px;
+    position: relative;
+    height: 0;
 
     iframe {
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
         position: absolute;
     }
 }
@@ -128,8 +130,8 @@ section {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px 200px 200px;
         grid-template-areas: "img1 img2 img3 img3"
-        " img1 img4 img5 img6"
-        " img7 img4 img8 img8";
+            " img1 img4 img5 img6"
+            " img7 img4 img8 img8";
         grid-gap: 10px;
 
         .item {
@@ -315,26 +317,42 @@ section {
 
 /* NOTICIAS */
 
+// Para destacar los enlaces de noticias
 
-/* Estado inicial */
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
 a:link {
-    color: red;
+    color: #0950f3;
 }
 
-/* enlace sobre el que ya hemos hecho clic */
 a:visited {
-    color: green;
+    color: #0950f3;
 }
 
-/* cuando el puntero del mouse esta sobre el */
+a:focus {
+    border-bottom: 1px solid;
+    background: #8ae6e8;
+}
+
 a:hover {
-    color: hotpink;
+    border-bottom: 1px solid;
+    background: #649ef0;
 }
 
-/* Mientras estamos presionando el enlace */
 a:active {
-    color: blue;
+    background: #649ef0;
+    color: #0950f3;
 }
 
 
 /* COLABORA CON NOSOTROS */
+
+button{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
